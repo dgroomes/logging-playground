@@ -10,7 +10,7 @@ logs that would otherwise be too numerous if enabled 100%.
 ### Instructions
 
 * Use Java 11.
-* Build and run with `../gradlew run`
+* Build and run with `./gradlew run`
   
 ### Wish List
 

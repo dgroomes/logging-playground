@@ -4,7 +4,7 @@ Learning and experimenting with logging libraries in the Java ecosystem.
 
 ---
 
-The project illustrates different concepts, patterns and examples via sub-projects:
+The project illustrates different concepts, patterns and examples via standalone sub-projects:
 
 ### `slf4j-simple/`
 

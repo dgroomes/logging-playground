@@ -10,7 +10,7 @@ public class Main {
 
     private static final Logger log = LoggerFactory.getLogger(Main.class);
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         log.info("NOT YET IMPLEMENTED Let's learn about Logback Filters!");
 
         List<String> users = new ArrayList<>();
@@ -18,8 +18,16 @@ public class Main {
             users.add("User" + i);
         }
 
-        for (String user : users) {
-            log.info("Hello {}!", user);
+        // Continuously execute a log statement over time. Experiment by making changes to the logback.xml file while
+        // the program is running and see how it affects the logging output of the program.
+        //noinspection InfiniteLoopStatement
+        while (true) {
+            for (String user : users) {
+                log.info("Hello {}!", user);
+                //noinspection BusyWait
+                Thread.sleep(2000);
+            }
+            log.debug("Iterated through all {} of the users", users.size());
         }
     }
 }

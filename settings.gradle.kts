@@ -1,5 +1,4 @@
 rootProject.name = "logging-playground"
 
-include(
-        "slf4j-simple",
-        "logback-filters")
+includeBuild("slf4j-simple")
+includeBuild("logback-filters")
