@@ -1,6 +1,6 @@
 # logback-filters
 
-NOT YET IMPLEMENTED Learning and exploring [Logback _Filters_](http://logback.qos.ch/manual/filters.html).
+Learning and exploring [Logback _Filters_](http://logback.qos.ch/manual/filters.html).
 
 ---
 

@@ -11,7 +11,7 @@ public class Main {
     private static final Logger log = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) throws InterruptedException {
-        log.info("NOT YET IMPLEMENTED Let's learn about Logback Filters!");
+        log.info("Let's learn about Logback Filters!");
 
         List<String> users = new ArrayList<>();
         for (int i = 1; i <= 10; i++) {

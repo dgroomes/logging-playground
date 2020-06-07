@@ -2,6 +2,8 @@
 <configuration debug="true" scan="true" scanPeriod="2 seconds">
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="dgroomes.loggingplayground.logbackfilters.HelloUserFilter"/>
+
         <!-- encoders are assigned the type
              ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
         <encoder>
@@ -9,7 +11,7 @@
         </encoder>
     </appender>
 
-    <root level="info">
-        <appender-ref ref="STDOUT" />
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
     </root>
 </configuration>

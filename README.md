@@ -14,7 +14,7 @@ See [slf4j-simple/README.md](slf4j-simple/README.md).
 
 ### `logback-filters/`
 
-NOT YET IMPLEMENTED Using [Logback _Filters_](http://logback.qos.ch/manual/filters.html) to conditionally log some things and not others. Useful, for example, to 
-sample some logs that would otherwise be too numerous if enabled 100%.
+Using [Logback _Filters_](http://logback.qos.ch/manual/filters.html) to conditionally log some things and not others.
+Useful, for example, to sample some logs that would otherwise be too numerous if enabled 100%.
 
 See [logback-filters/README.md](logback-filters/README.md).
