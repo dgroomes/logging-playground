@@ -4,7 +4,6 @@ plugins {
 }
 
 val slf4jVersion = "1.7.30" // releases: http://www.slf4j.org/news.html
-val logbackVersion = "1.2.3" // releases: http://logback.qos.ch/download.html
 val junitJupiterVersion = "5.6.2" // releases: https://junit.org/junit5/docs/current/release-notes/index.html
 
 repositories {
@@ -39,24 +38,8 @@ tasks {
             exceptionFormat = org.gradle.api.tasks.testing.logging.TestExceptionFormat.FULL
         }
     }
-
-
-
-    withType(Test::class.java) {
-        jvmArgs = listOf("-Dlogback.configurationFile=logback.xml")
-        useJUnitPlatform()
-    }
-
-    named<CreateStartScripts>("startScripts") {
-        defaultJvmOpts = listOf("-Dlogback.configurationFile=logback.xml")
-    }
-
-    named<JavaExec>("run") {
-        jvmArgs = listOf("-Dlogback.configurationFile=logback.xml")
-    }
-
 }
 
 application {
-    mainClassName = "dgroomes.loggingplayground.slf4jsimple.Main"
+    mainClass.set("dgroomes.loggingplayground.slf4jsimple.Main")
 }

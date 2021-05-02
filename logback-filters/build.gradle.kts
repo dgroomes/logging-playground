@@ -47,5 +47,5 @@ tasks {
 }
 
 application {
-    mainClassName = "dgroomes.loggingplayground.logbackfilters.Main"
+    mainClass.set("dgroomes.loggingplayground.logbackfilters.Main")
 }
