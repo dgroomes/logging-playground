@@ -10,11 +10,17 @@ The project illustrates different concepts, patterns and examples via standalone
 
 A simple logging setup using SLF4J's `slf4j-simple` logging implementation.
 
-See [slf4j-simple/README.md](slf4j-simple/README.md). 
+See the README in [slf4j-simple/](slf4j-simple/). 
 
 ### `logback-filters/`
 
 Using [Logback _Filters_](http://logback.qos.ch/manual/filters.html) to conditionally log some things and not others.
 Useful, for example, to sample some logs that would otherwise be too numerous if enabled 100%.
 
-See [logback-filters/README.md](logback-filters/README.md).
+See the README in [logback-filters/](logback-filters/).
+
+### `java-util-logging/`
+
+Showcasing Java's core logging facilities: `java.util.logging`.
+
+See the README in [java-util-logging/](java-util-logging/).
