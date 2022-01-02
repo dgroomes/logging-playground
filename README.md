@@ -1,6 +1,6 @@
 # logging-playground
 
-Learning and experimenting with logging libraries in the Java ecosystem.
+📚 Learning and experimenting with logging libraries in the Java ecosystem.
 
 ---
 

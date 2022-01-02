@@ -10,7 +10,7 @@ to learn in my opinion.
 
 ## Instructions
 
-* Use Java 11
+* Use Java 17
 * Build and run the program:
   * `./gradlew run`
   * Notice the logs printed to the console!
