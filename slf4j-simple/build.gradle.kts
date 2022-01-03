@@ -3,6 +3,12 @@ plugins {
     application
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
 val slf4jVersion = "1.7.32" // SLF4J releases: http://www.slf4j.org/news.html
 
 repositories {

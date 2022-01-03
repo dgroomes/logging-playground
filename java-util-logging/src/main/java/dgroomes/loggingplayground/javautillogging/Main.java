@@ -1,5 +1,6 @@
 package dgroomes.loggingplayground.javautillogging;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
@@ -10,12 +11,14 @@ public class Main {
     private static final Logger log = Logger.getLogger(Main.class.getName());
 
     public static void main(String[] args) {
-        log.finest("A FINEST-level message");
-        log.finer("A FINER-level message");
-        log.fine("A FINE-level message");
-        log.config("A CONFIG-level message");
-        log.info("An INFO-level message");
-        log.warning("A WARNING-level message");
-        log.severe("A SEVERE-level message");
+        var msg = "This message should be logged at the log level {0} and above";
+
+        log.log(Level.FINEST, msg, "FINEST");
+        log.log(Level.FINER, msg, "FINER");
+        log.log(Level.FINE, msg, "FINE");
+        log.log(Level.CONFIG, msg, "CONFIG");
+        log.log(Level.INFO, msg, "INFO");
+        log.log(Level.WARNING, msg, "WARNING");
+        log.log(Level.SEVERE, msg, "SEVERE");
     }
 }

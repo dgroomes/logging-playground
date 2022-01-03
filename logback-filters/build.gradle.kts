@@ -3,6 +3,12 @@ plugins {
     application
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}
+
 val slf4jVersion = "1.7.32" // SLF4J releases: http://www.slf4j.org/news.html
 val logbackVersion = "1.2.10" // Logback releases: http://logback.qos.ch/download.html
 

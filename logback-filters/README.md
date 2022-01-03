@@ -12,10 +12,10 @@ logs that would otherwise be too numerous if enabled 100%.
 * Use Java 17
 * Build and run the program:
   * `./gradlew run`
-  
+
 ## Wish List
 
-Items I wish to implement for this project:
+General clean-ups, TODOs and things I wish to implement for this project:
 
  * How do I implement filters that key off of the contents of the message?
  * How do I implement filters that key off of some other kind of metadata *besides the contents of the message*? Is MDC

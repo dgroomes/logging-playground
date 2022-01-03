@@ -34,7 +34,26 @@ configuration file via a Java system property:
 -Djava.util.logging.config.file=my-custom-logging.properties
 ```
 
+## Wish List
+
+General clean-ups, TODOs and things I wish to implement for this project:
+
+* [ ] DONE Log messages with a parameter. Remember, MessageFormatter is used under-the-hood and supports
+  format strings like `{1}`.
+* [ ] Use a custom format string. I don't like the two-line default.
+* [ ] Consider coding to `java.lang.System.Logger` 
+
 ## Reference
 
 * [Oracle Help Center for Java: *Java Logging Overview*](https://docs.oracle.com/en/java/javase/16/core/java-logging-overview.html)
 * [JavaDoc for `java.util.logging`](https://docs.oracle.com/en/java/javase/16/docs/api/java.logging/java/util/logging/package-summary.html)
+* [JEP 264: "Platform Logging API and Service"](https://openjdk.java.net/jeps/264)
+  * This JEP introduced `java.lang.System.Logger` which is a lightweight API that internal JDK classes code to so that
+    they may be de-coupled from the `java.logging` module. 
+* [JavaDoc for the class "java.text.MessageFormat"](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/MessageFormat.html)
+  > `MessageFormat` provides a means to produce concatenated messages in a language-neutral way. Use this to construct
+    messages displayed for end users.
+  
+  `MessageFormat` is used by JUL. It uses curly-brace style parameterization like `Hello {1}, my name is {2}`. I
+  can't believe I didn't know this. I always assumed the C style format (`String.format` and `Hello %s, my name is %s`)
+  was Java's only standard option.
