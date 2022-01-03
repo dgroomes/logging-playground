@@ -22,5 +22,5 @@ tasks {
 }
 
 application {
-    mainClass.set("dgroomes.loggingplayground.javautillogging.Main")
+    mainClass.set("dgroomes.loggingplayground.javacorelogging.Main")
 }

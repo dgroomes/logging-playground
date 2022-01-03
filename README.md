@@ -19,8 +19,8 @@ Useful, for example, to sample some logs that would otherwise be too numerous if
 
 See the README in [logback-filters/](logback-filters/).
 
-### `java-util-logging/`
+### `java-core-logging/`
 
-Showcasing Java's core logging facilities: `java.util.logging`.
+Showcasing Java's core logging facilities: `java.util.logging` (JUL) and `java.lang.System.Logger`.
 
-See the README in [java-util-logging/](java-util-logging/).
+See the README in [java-core-logging/](java-core-logging/).

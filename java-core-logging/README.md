@@ -1,6 +1,6 @@
-# java-util-logging
+# java-core-logging
 
-Showcasing Java's core logging facilities: `java.util.logging`.
+Showcasing Java's core logging facilities: `java.util.logging` (JUL) and `java.lang.System.Logger`.
 
 ## Why?
 
@@ -38,10 +38,10 @@ configuration file via a Java system property:
 
 General clean-ups, TODOs and things I wish to implement for this project:
 
-* [ ] DONE Log messages with a parameter. Remember, MessageFormatter is used under-the-hood and supports
+* [x] DONE Log messages with a parameter. Remember, MessageFormatter is used under-the-hood and supports
   format strings like `{1}`.
 * [ ] Use a custom format string. I don't like the two-line default.
-* [ ] Consider coding to `java.lang.System.Logger` 
+* [x] DONE Consider (update: yes, do it) coding to `java.lang.System.Logger` 
 
 ## Reference
 
@@ -57,3 +57,4 @@ General clean-ups, TODOs and things I wish to implement for this project:
   `MessageFormat` is used by JUL. It uses curly-brace style parameterization like `Hello {1}, my name is {2}`. I
   can't believe I didn't know this. I always assumed the C style format (`String.format` and `Hello %s, my name is %s`)
   was Java's only standard option.
+* [My own StackOverflow answer that paints a poor picture for the development experience of the JUL API](https://stackoverflow.com/a/70561129/1333713)
