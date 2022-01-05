@@ -14,6 +14,7 @@ import java.lang.System.Logger.Level;
 public class Main {
 
     private static final System.Logger log = System.getLogger(Main.class.getName());
+    private static final System.Logger specialLog = System.getLogger("speciallog");
 
     public static void main(String[] args) {
         var msg = "This message should be logged at the log level {0} and above";
@@ -24,5 +25,7 @@ public class Main {
         log.log(Level.INFO, msg, "INFO");
         log.log(Level.WARNING, msg, "WARNING");
         log.log(Level.ERROR, msg, "ERROR");
+
+        specialLog.log(Level.INFO, "Hello! This message was logged on the 'speciallogger'. Notice how the format is different than the other logs.");
     }
 }
