@@ -44,7 +44,7 @@ General clean-ups, TODOs and things I wish to implement for this project:
 * [x] DONE Consider (update: yes, do it) coding to `java.lang.System.Logger`
 * [x] DONE Defect. The log level isn't working. It should printing FINE logs but isn't.
 * [x] DONE Is there a way to create different formatters? Answer: yes, but multiple handlers and formattes are needed.
-* [ ] Defect. The speciallog statement is logged twice.
+* [x] DONE Defect. The speciallog statement is logged twice.
 
 ## Reference
 
