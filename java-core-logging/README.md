@@ -24,7 +24,7 @@ A great way to learn about and explore Java's core logging facilities is to make
 file:
 
 ```
-cp "$JAVA_HOME/conf/logging.properties my-custom-logging.properties"
+cp "$JAVA_HOME/conf/logging.properties" my-custom-logging.properties
 ```
 
 Then, open the file and tweak some property values. Then, execute your Java program and pass a reference to your custom
@@ -40,7 +40,7 @@ General clean-ups, TODOs and things I wish to implement for this project:
 
 * [x] DONE Log messages with a parameter. Remember, MessageFormatter is used under-the-hood and supports
   format strings like `{1}`.
-* [ ] Use a custom format string. I don't like the two-line default.
+* [x] DONE Use a custom format string. I don't like the two-line default.
 * [x] DONE Consider (update: yes, do it) coding to `java.lang.System.Logger`
 * [x] DONE Defect. The log level isn't working. It should printing FINE logs but isn't.
 
