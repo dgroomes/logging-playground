@@ -16,6 +16,10 @@ public class Main {
     private static final System.Logger log = System.getLogger(Main.class.getName());
     private static final System.Logger specialLog = System.getLogger("speciallog");
 
+    static {
+        LoggingConfig.config();
+    }
+
     public static void main(String[] args) {
         var msg = "This message should be logged at the log level {0} and above";
 
