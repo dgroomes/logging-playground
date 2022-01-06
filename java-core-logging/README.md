@@ -13,7 +13,16 @@ to learn in my opinion.
 * Use Java 17
 * Build and run the program:
   * `./gradlew run`
-  * Notice the logs printed to the console!
+  * Notice the logs printed to the console! It will look something like below.
+    ```
+    speciallog's parent logger: java.util.logging.LogManager$RootLogger@63947c6b
+    speciallog's parent logger: dgroomes.loggingplayground.javacorelogging.LoggingConfig$1DeadEndLogger@355da254
+    [06:35:51 PM] FINE      This message should be logged at the log level DEBUG and above
+    [06:35:51 PM] INFO      This message should be logged at the log level INFO and above
+    [06:35:51 PM] WARNING   This message should be logged at the log level WARNING and above
+    [06:35:51 PM] SEVERE    This message should be logged at the log level ERROR and above
+    [speciallog] Hello! This message was logged on the 'speciallogger'. Notice how the format is different than the other logs.
+    ```
 * Study the configuration
   * Read the `build.gradle.kts` file and notice the system properties used when running the program
   * Read the `custom-logging.properties` file and notice the log level and file handler configurations
