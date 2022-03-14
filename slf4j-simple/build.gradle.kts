@@ -9,7 +9,7 @@ java {
     }
 }
 
-val slf4jVersion = "1.7.32" // SLF4J releases: http://www.slf4j.org/news.html
+val slf4jVersion = "1.7.36" // SLF4J releases: http://www.slf4j.org/news.html
 
 repositories {
     mavenCentral()

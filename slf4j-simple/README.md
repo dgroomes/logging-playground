@@ -4,10 +4,11 @@ A simple logging setup using SLF4J's `slf4j-simple` logging implementation.
 
 ## Instructions
 
+Follow these instructions to build and run the example program:
+
 * Use Java 17
 * Build and run the program:
   * `./gradlew run`
-
 
 ## Notes
 

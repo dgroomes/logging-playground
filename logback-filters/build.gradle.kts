@@ -9,8 +9,8 @@ java {
     }
 }
 
-val slf4jVersion = "1.7.32" // SLF4J releases: http://www.slf4j.org/news.html
-val logbackVersion = "1.2.10" // Logback releases: http://logback.qos.ch/download.html
+val slf4jVersion = "1.7.36" // SLF4J releases: http://www.slf4j.org/news.html
+val logbackVersion = "1.2.11" // Logback releases: http://logback.qos.ch/download.html
 
 repositories {
     mavenCentral()

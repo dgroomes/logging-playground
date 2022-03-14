@@ -9,9 +9,20 @@ logs that would otherwise be too numerous if enabled 100%.
 
 ## Instructions
 
+Follow these instructions to build and run the example program:
+
 * Use Java 17
 * Build and run the program:
   * `./gradlew run`
+  * Study the log output carefully and compare it to the log statements in the Java source code. Notice how the logs
+    show "Hello User7!" but not "Hello User6!", "Hello User5!", etc. That's because of the filter! The logs should look
+    something like this:
+    ```
+    ... Logback debugging info. Omitted  ...
+    20:58:36 [main] INFO  d.l.logbackfilters.Main - Let's learn about Logback Filters!
+    20:58:48 [main] INFO  d.l.logbackfilters.Main - Hello User7!
+    20:58:56 [main] DEBUG d.l.logbackfilters.Main - Iterated through all 10 of the users
+    ```
 
 ## Wish List
 
