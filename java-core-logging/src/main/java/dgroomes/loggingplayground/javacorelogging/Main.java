@@ -5,11 +5,11 @@ import java.lang.System.Logger.Level;
 /**
  * A simple Java program to illustrate Java's core logging facilities.
  * <p>
- * I am purposely not coding to java.util.logging (JUL) and instead coding to the JDK's newer offering: {@link java.lang.System.Logger}.
- * I'm not sure I can advocate for coupling code to the JUL API. In my opinion, it's better to either code to the system
+ * I am purposely not coding to java.util.logging (JUL) and instead coding to the JDK's newer offering: {@link System.Logger}.
+ * I'm not sure that I can advocate for coupling code to the JUL API. In my opinion, it's better to either code to the system
  * logger, use SLF4J or consider more advanced options if needed.
  * <p>
- * For more background on my JUL opinion, see https://stackoverflow.com/a/70561129/1333713.
+ * For more background on my JUL opinion, see <a href="https://stackoverflow.com/a/70561129/">this StackOverflow answer</a>.
  */
 public class Main {
 

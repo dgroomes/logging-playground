@@ -2,9 +2,15 @@
 
 📚 Learning and experimenting with logging libraries in the Java ecosystem.
 
----
 
-The project illustrates different concepts, patterns and examples via standalone sub-projects:
+## Standalone subprojects
+
+This repository illustrates different concepts, patterns and examples via standalone subprojects. Each sub-project is
+completely independent of the others and do not depend on the root project. This _standalone sub-project constraint_
+forces the subprojects to be complete and maximizes the reader's chances of successfully running, understanding, and
+re-using the code.
+
+The subprojects include:
 
 ### `slf4j-simple/`
 
