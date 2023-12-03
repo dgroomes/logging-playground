@@ -12,11 +12,13 @@ re-using the code.
 
 The subprojects include:
 
+
 ### `slf4j-simple/`
 
 A simple logging setup using SLF4J's `slf4j-simple` logging implementation.
 
 See the README in [slf4j-simple/](slf4j-simple/). 
+
 
 ### `logback-filters/`
 
@@ -25,8 +27,16 @@ Useful, for example, to sample some logs that would otherwise be too numerous if
 
 See the README in [logback-filters/](logback-filters/).
 
+
 ### `java-core-logging/`
 
 Showcasing Java's core logging facilities: `java.util.logging` (JUL) and `java.lang.System.Logger`.
 
 See the README in [java-core-logging/](java-core-logging/).
+
+
+### `jul-slf4j-bridge/`
+
+Bridge `java.util.logging` (JUL) logging statements to SLF4J.
+
+See the README in [jul-slf4j-bridge/](jul-slf4j-bridge/).
