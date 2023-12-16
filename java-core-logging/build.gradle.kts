@@ -3,12 +3,6 @@ plugins {
     application
 }
 
-java {
-    toolchain {
-        languageVersion.set(JavaLanguageVersion.of(17))
-    }
-}
-
 val customLogSysProp = "-Djava.util.logging.config.file=custom-logging.properties"
 
 tasks {

@@ -2,46 +2,54 @@
 
 Showcasing Java's core logging facilities: `java.util.logging` (JUL) and `java.lang.System.Logger`.
 
+
 ## Why?
 
 The surface area of logging solutions in the Java ecosystem is vast. Java's own standard library for logging is
 infrequently used compared to logging frameworks like Log4j, Logback and the logging facade SLF4J but it is still important
 to learn in my opinion. 
 
+
 ## Instructions
 
-* Use Java 17
-* Build and run the program:
-  * `./gradlew run`
-  * Notice the logs printed to the console! It will look something like below.
-    ```
-    speciallog's parent logger: java.util.logging.LogManager$RootLogger@63947c6b
-    speciallog's parent logger: dgroomes.loggingplayground.javacorelogging.LoggingConfig$1DeadEndLogger@355da254
-    [06:35:51 PM] FINE      This message should be logged at the log level DEBUG and above
-    [06:35:51 PM] INFO      This message should be logged at the log level INFO and above
-    [06:35:51 PM] WARNING   This message should be logged at the log level WARNING and above
-    [06:35:51 PM] SEVERE    This message should be logged at the log level ERROR and above
-    [speciallog] Hello! This message was logged on the 'speciallogger'. Notice how the format is different than the other logs.
-    ```
-* Study the configuration
-  * Read the `build.gradle.kts` file and notice the system properties used when running the program
-  * Read the `custom-logging.properties` file and notice the log level and file handler configurations
-  
+Follow these instructions to build and run the program.
+
+1. Pre-requisite: Java 21
+2. Build and run the program:
+   * ```shell
+     ./gradlew run
+     ```
+   * Notice the logs printed to the console! It will look something like below.
+     ```text
+     speciallog's parent logger: java.util.logging.LogManager$RootLogger@63947c6b
+     speciallog's parent logger: dgroomes.loggingplayground.javacorelogging.LoggingConfig$1DeadEndLogger@355da254
+     [06:35:51 PM] FINE      This message should be logged at the log level DEBUG and above
+     [06:35:51 PM] INFO      This message should be logged at the log level INFO and above
+     [06:35:51 PM] WARNING   This message should be logged at the log level WARNING and above
+     [06:35:51 PM] SEVERE    This message should be logged at the log level ERROR and above
+     [speciallog] Hello! This message was logged on the 'speciallogger'. Notice how the format is different than the other logs.
+     ```
+3. Study the configuration
+   * Read the `build.gradle.kts` file and notice the system properties used when running the program
+   * Read the `custom-logging.properties` file and notice the log level and file handler configurations
+
+
 ## Tips
 
 A great way to learn about and explore Java's core logging facilities is to make a copy of Java's default logging configuration
 file:
 
-```
+```shell
 cp "$JAVA_HOME/conf/logging.properties" my-custom-logging.properties
 ```
 
 Then, open the file and tweak some property values. Then, execute your Java program and pass a reference to your custom
 configuration file via a Java system property:
 
-```
+```text
 -Djava.util.logging.config.file=my-custom-logging.properties
 ```
+
 
 ## Wish List
 
@@ -54,6 +62,7 @@ General clean-ups, TODOs and things I wish to implement for this project:
 * [x] DONE Defect. The log level isn't working. It should printing FINE logs but isn't.
 * [x] DONE Is there a way to create different formatters? Answer: yes, but multiple handlers and formattes are needed.
 * [x] DONE Defect. The speciallog statement is logged twice.
+
 
 ## Reference
 
