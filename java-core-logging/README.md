@@ -15,9 +15,13 @@ to learn in my opinion.
 Follow these instructions to build and run the program.
 
 1. Pre-requisite: Java 21
-2. Build and run the program:
+2. Build the program distribution
    * ```shell
-     ./gradlew run
+     ./gradlew installDist
+     ```
+3. Run the program
+   * ```shell
+     build/install/java-core-logging/bin/java-core-logging
      ```
    * Notice the logs printed to the console! It will look something like below.
      ```text

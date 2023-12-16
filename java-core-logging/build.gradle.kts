@@ -6,11 +6,11 @@ plugins {
 val customLogSysProp = "-Djava.util.logging.config.file=custom-logging.properties"
 
 tasks {
-    named<CreateStartScripts>("startScripts") {
+    startScripts {
         defaultJvmOpts = listOf(customLogSysProp)
     }
 
-    named<JavaExec>("run") {
+    run.invoke {
         jvmArgs = listOf(customLogSysProp)
     }
 }

@@ -2,6 +2,8 @@
 
 📚 Learning and experimenting with logging libraries in the Java ecosystem.
 
+**NOTE**: This project was developed on macOS. It is designed for my own personal use.
+
 
 ## Standalone subprojects
 
