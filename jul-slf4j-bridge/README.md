@@ -17,17 +17,21 @@ configuration mechanism (e.g. `logback.xml`, `simplelogger.properties`, etc.).
 
 Follow these instructions to build and run the example program:
 
-1. Use Java 21
-2. Build and run the program:
+1. Pre-requisite: Java 21
+2. Build the program distribution
     * ```shell
-      ./gradlew run
+      ./gradlew installDist
+      ```
+3. Run the program
+    * ```shell
+      build/install/jul-slf4j-bridge/bin/jul-slf4j-bridge
       ```
     * It will output something like the following.
     * ```text
-      23:30:11 [main] INFO dgroomes.jul_slf4j_bridge.Main - Let's route third-party library code to log through SLF4J using the JUL-to-SLF4J bridge.
-      23:30:11 [main] INFO dgroomes.jul_slf4j_bridge.Main - An INFO-level message from our own source code.
-      23:30:11 [main] DEBUG org.fictional_utility_library.ThirdPartyStringUtility - The string is empty.
-      23:30:11 [main] INFO dgroomes.jul_slf4j_bridge.Main - The third-party 'isBlank' method returned: true
+      19:22:55 [main] INFO dgroomes.jul_slf4j_bridge.Main - Let's route third-party library code to log through SLF4J using the JUL-to-SLF4J bridge.
+      19:22:55 [main] INFO dgroomes.jul_slf4j_bridge.Main - An INFO-level message from our own source code.
+      19:22:55 [main] DEBUG org.fictional_utility_library.ThirdPartyStringUtility - The string is empty.
+      19:22:55 [main] INFO dgroomes.jul_slf4j_bridge.Main - The third-party 'isBlank' method returned: true
       ```
     * Notice how the log statements from our own source code and the log statements from the third-party library show
       up with the same format. This is because the third-party log statements were routed to SLF4J. We can change the
