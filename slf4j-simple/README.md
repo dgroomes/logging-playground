@@ -18,8 +18,8 @@ Follow these instructions to build and run the example program:
       ```
     * It will output something like the following.
     * ```text
-      19:18:27 [main] WARN dgroomes.slf4jsimple.Main - A WARN-level message
-      19:18:27 [main] ERROR dgroomes.slf4jsimple.Main - An ERROR-level message
+      19:27:10 [main] WARN dgroomes.slf4j_simple.Main - A WARN-level message
+      19:27:10 [main] ERROR dgroomes.slf4j_simple.Main - An ERROR-level message
       ```
     * Notice how the code specified TRACE, DEBUG and INFO level messages but only WARN and ERROR messages were logged.
       Study the logging configuration file `src/main/resources/simplelogger.properties` to see why.

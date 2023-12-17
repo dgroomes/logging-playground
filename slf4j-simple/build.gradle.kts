@@ -13,5 +13,5 @@ dependencies {
 }
 
 application {
-    mainClass.set("dgroomes.slf4jsimple.Main")
+    mainClass.set("dgroomes.slf4j_simple.Main")
 }
