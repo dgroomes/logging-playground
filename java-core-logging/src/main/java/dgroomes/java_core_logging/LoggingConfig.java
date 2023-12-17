@@ -1,4 +1,4 @@
-package dgroomes.loggingplayground.javacorelogging;
+package dgroomes.java_core_logging;
 
 import java.util.logging.Logger;
 

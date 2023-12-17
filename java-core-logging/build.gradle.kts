@@ -3,18 +3,12 @@ plugins {
     application
 }
 
-val customLogSysProp = "-Djava.util.logging.config.file=custom-logging.properties"
-
 tasks {
     startScripts {
-        defaultJvmOpts = listOf(customLogSysProp)
-    }
-
-    run.invoke {
-        jvmArgs = listOf(customLogSysProp)
+        defaultJvmOpts = listOf("-Djava.util.logging.config.file=custom-logging.properties")
     }
 }
 
 application {
-    mainClass.set("dgroomes.loggingplayground.javacorelogging.Main")
+    mainClass.set("dgroomes.java_core_logging.Main")
 }
