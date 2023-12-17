@@ -27,9 +27,9 @@ Follow these instructions to build and run the example program:
      something like this:
      ```text
      ... Logback debugging info. Omitted  ...
-     20:58:36 [main] INFO  d.l.logbackfilters.Main - Let's learn about Logback Filters!
-     20:58:48 [main] INFO  d.l.logbackfilters.Main - Hello User7!
-     20:58:56 [main] DEBUG d.l.logbackfilters.Main - Iterated through all 10 of the users
+     19:25:33 [main] INFO  dgroomes.logback_filters.Main - Let's learn about Logback Filters!
+     19:25:45 [main] INFO  dgroomes.logback_filters.Main - Hello User7!
+     19:25:53 [main] DEBUG dgroomes.logback_filters.Main - Iterated through all 10 of the users
      ```
 
 

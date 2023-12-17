@@ -12,18 +12,12 @@ dependencies {
     implementation(libs.logback.classic)
 }
 
-val logbackSystemProp = "-Dlogback.configurationFile=logback.xml"
-
 tasks {
     startScripts {
-        defaultJvmOpts = listOf(logbackSystemProp)
-    }
-
-    run.invoke {
-        jvmArgs = listOf(logbackSystemProp)
+        defaultJvmOpts = listOf("-Dlogback.configurationFile=logback.xml")
     }
 }
 
 application {
-    mainClass.set("dgroomes.loggingplayground.logbackfilters.Main")
+    mainClass.set("dgroomes.logback_filters.Main")
 }
