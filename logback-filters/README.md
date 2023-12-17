@@ -13,10 +13,14 @@ logs that would otherwise be too numerous if enabled 100%.
 
 Follow these instructions to build and run the example program:
 
-1. Use Java 17
-2. Build and run the program:
+1. Pre-requisite: Java 21
+2. Build the program distribution
    * ```shell
-     ./gradlew run
+     ./gradlew installDist
+     ```
+3. Run the program
+   * ```shell
+     build/install/logback-filters/bin/logback-filters
      ```
    * Study the log output carefully and compare it to the log statements in the Java source code. Notice how the logs
      show "Hello User7!" but not "Hello User6!", "Hello User5!", etc. That's because of the filter! The logs should look
