@@ -7,15 +7,19 @@ A simple logging setup using SLF4J's `slf4j-simple` logging implementation.
 
 Follow these instructions to build and run the example program:
 
-1. Use Java 17
-2. Build and run the program:
+1. Pre-requisite: Java 21
+2. Build the program distribution
     * ```shell
-      ./gradlew run
+      ./gradlew installDist
+      ```
+3. Run the program
+    * ```shell
+      build/install/slf4j-simple/bin/slf4j-simple
       ```
     * It will output something like the following.
     * ```text
-      22:58:05 [main] WARN dgroomes.loggingplayground.slf4jsimple.Main - A WARN-level message
-      22:58:05 [main] ERROR dgroomes.loggingplayground.slf4jsimple.Main - An ERROR-level message
+      19:18:27 [main] WARN dgroomes.slf4jsimple.Main - A WARN-level message
+      19:18:27 [main] ERROR dgroomes.slf4jsimple.Main - An ERROR-level message
       ```
     * Notice how the code specified TRACE, DEBUG and INFO level messages but only WARN and ERROR messages were logged.
       Study the logging configuration file `src/main/resources/simplelogger.properties` to see why.
